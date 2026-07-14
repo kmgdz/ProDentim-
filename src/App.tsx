@@ -6,6 +6,7 @@
 import React from 'react';
 import { Leaf, Info, CheckCircle2, ChevronRight, AlertCircle, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
+import { Analytics } from '@vercel/analytics/react';
 
 import { logoImg, productImg, ingredientsImg, splashImg } from './assets/images';
 
@@ -267,6 +268,7 @@ export default function App() {
           </p>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
