@@ -7,6 +7,11 @@ import React from 'react';
 import { Leaf, Info, CheckCircle2, ChevronRight, AlertCircle, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
 
+import logoImg from './assets/logo.png';
+import productImg from './assets/product.png';
+import ingredientsImg from './assets/ingredients.png';
+import splashImg from './assets/splash.jpg';
+
 const AFFILIATE_LINK = "https://4f785uc9xd7r4s8kycr6yelfdn.hop.clickbank.net";
 
 export default function App() {
@@ -17,7 +22,7 @@ export default function App() {
       <header className="w-full bg-white border-b border-gray-200 sticky top-0 z-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="/logo.png" alt="Natural Health Hub Logo" className="w-8 h-8 rounded-full" />
+            <img src={logoImg} alt="Natural Health Hub Logo" className="w-8 h-8 rounded-full" />
             <span className="font-sans font-bold text-lg tracking-tight text-gray-900">Natural Health Hub</span>
           </div>
           <nav className="hidden sm:flex gap-6 text-sm font-medium text-gray-500">
@@ -69,14 +74,6 @@ export default function App() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="prose prose-lg prose-emerald max-w-none text-gray-800"
         >
-          {/* Disclosure */}
-          <div className="bg-stone-100 rounded-lg p-4 mb-8 flex items-start gap-3 border border-stone-200 text-sm italic text-gray-600">
-            <Info className="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" />
-            <p className="m-0">
-              Disclosure: this post contains an affiliate link. If you buy through it, I earn a small commission at no extra cost to you. I only recommend things I've actually tried.
-            </p>
-          </div>
-
           <p className="text-lg leading-relaxed mb-6">
             I'll be honest about how this started: my dentist mentioned my gums were a little inflamed at a routine cleaning, and instead of just nodding and forgetting about it, I went down a rabbit hole. That's how I ended up reading ProDentim reviews for two nights straight instead of sleeping.
           </p>
@@ -88,7 +85,7 @@ export default function App() {
           {/* Hero Image */}
           <figure className="my-10 rounded-xl overflow-hidden shadow-lg border border-gray-100 bg-white">
             <img 
-              src="/product.png" 
+              src={productImg} 
               alt="ProDentim Bottles" 
               className="w-full h-auto object-cover"
             />
@@ -109,7 +106,7 @@ export default function App() {
 
           <figure className="mb-8 rounded-xl overflow-hidden shadow-md border border-gray-100 bg-white">
             <img 
-              src="/ingredients.png" 
+              src={ingredientsImg} 
               alt="Scientific cultivation of micro-ingredients" 
               className="w-full h-auto object-cover"
             />
@@ -212,7 +209,7 @@ export default function App() {
           
           <figure className="mb-8 rounded-xl overflow-hidden shadow-md border border-gray-100 bg-white">
             <img 
-              src="/splash.jpg" 
+              src={splashImg} 
               alt="Fresh breath elements like mint and strawberry" 
               className="w-full h-auto object-cover"
             />
@@ -242,6 +239,14 @@ export default function App() {
             </a>
             <p className="text-sm text-gray-400 mt-4 italic">
               *Talk to your dentist first if you have an existing gum or dental condition.
+            </p>
+          </div>
+
+          {/* Disclosure */}
+          <div className="mt-8 bg-stone-100 rounded-lg p-4 mb-8 flex items-start gap-3 border border-stone-200 text-sm italic text-gray-600">
+            <Info className="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" />
+            <p className="m-0 text-left">
+              Disclosure: this post contains an affiliate link. If you buy through it, I earn a small commission at no extra cost to you. I only recommend things I've actually tried.
             </p>
           </div>
         </motion.div>
