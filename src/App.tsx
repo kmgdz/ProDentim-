@@ -7,10 +7,7 @@ import React from 'react';
 import { Leaf, Info, CheckCircle2, ChevronRight, AlertCircle, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
 
-import logoImg from './assets/logo.png';
-import productImg from './assets/product.png';
-import ingredientsImg from './assets/ingredients.png';
-import splashImg from './assets/splash.jpg';
+import { logoImg, productImg, ingredientsImg, splashImg } from './assets/images';
 
 const AFFILIATE_LINK = "https://4f785uc9xd7r4s8kycr6yelfdn.hop.clickbank.net";
 
@@ -59,7 +56,7 @@ export default function App() {
           {/* Author Meta */}
           <div className="flex items-center justify-center sm:justify-start gap-4 py-4 border-t border-b border-gray-200">
             <div className="w-12 h-12 rounded-full bg-gray-200 overflow-hidden flex-shrink-0">
-              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=100&h=100" alt="Author" className="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=100&h=100" alt="Author" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
             </div>
             <div className="text-left">
               <div className="font-semibold text-gray-900">Sarah Jenkins</div>
