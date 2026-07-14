@@ -1,0 +1,6 @@
+{
+  "name": "Natural Health Hub",
+  "description": "Dedicated to sharing science-backed tips, natural remedies, and honest reviews for a healthier life. Helping you improve your wellness from home. ✨",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
